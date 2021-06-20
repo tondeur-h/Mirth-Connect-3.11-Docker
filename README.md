@@ -82,7 +82,7 @@ volumes:
 - Le second pour les échanges de fichiers local avec le container   
 
 
-![partage Volume](https://gitlab.com/insa-hdf/architectures-orientees-services/-/raw/master/Mirth%20Connect%203.11/images/partage_container.png "partage volume")  
+![partage Volume](https://github.com/tondeur-h/Mirth-Connect-3.11-Docker/blob/c2cded03cb3169d991c76d0bdf966f8e5ab5fc8a/images/partage_container.png "partage volume")  
 
 # Accéder au service via le client Mirth Connect administrator 1.2   
 
@@ -94,7 +94,7 @@ Télécharger la version du client correspondant a votre OS client
 
 Installer et exécuter Mirth Connect Administrator Launcher, parametrer comme ci dessous :  
 
-![Dialogue du Launcher](https://gitlab.com/insa-hdf/architectures-orientees-services/-/raw/master/Mirth%20Connect%203.11/images/mirth_administrator.png "Dialogue du Launcher")  
+![Dialogue du Launcher](https://github.com/tondeur-h/Mirth-Connect-3.11-Docker/blob/c2cded03cb3169d991c76d0bdf966f8e5ab5fc8a/images/mirth_administrator.png "Dialogue du Launcher")  
 
 Au premier démarrage il est demandé le login et mot de passe par défaut de l'installation =>  admin / admin   
 
@@ -106,10 +106,10 @@ Puis il est demandé de changer ce mot de passe du compte admin => renseigner le
 
 Aller sur le menu de gauche "Channel" puis "Import Channel"  
 
-![Import Channel](https://gitlab.com/insa-hdf/architectures-orientees-services/-/raw/master/Mirth%20Connect%203.11/images/import_channel.png "Import Channel")  
+![Import Channel](https://github.com/tondeur-h/Mirth-Connect-3.11-Docker/blob/c2cded03cb3169d991c76d0bdf966f8e5ab5fc8a/images/import_channel.png "Import Channel")  
 
 Selectionner le fichier "TP_DAS.xml"  
-![Select File](https://gitlab.com/insa-hdf/architectures-orientees-services/-/raw/master/Mirth%20Connect%203.11/images/select_channel.png "Select File")  
+![Select File](https://github.com/tondeur-h/Mirth-Connect-3.11-Docker/blob/c2cded03cb3169d991c76d0bdf966f8e5ab5fc8a/images/select_channel.png "Select File")  
 
 Dans l'onglet en haut "Source", verifier que le chemin est bien "/opt/hl7"  
 
