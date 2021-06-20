@@ -102,36 +102,4 @@ Puis il est demandé de changer ce mot de passe du compte admin => renseigner le
 
 [Connect User Guide](https://www.nextgen.com/-/media/files/nextgen-connect/nextgen-connect-311-user-guide.pdf)  
 
-## charger le channel  
-
-Aller sur le menu de gauche "Channel" puis "Import Channel"  
-
-![Import Channel](https://github.com/tondeur-h/Mirth-Connect-3.11-Docker/blob/c2cded03cb3169d991c76d0bdf966f8e5ab5fc8a/images/import_channel.png "Import Channel")  
-
-Selectionner le fichier "TP_DAS.xml"  
-![Select File](https://github.com/tondeur-h/Mirth-Connect-3.11-Docker/blob/c2cded03cb3169d991c76d0bdf966f8e5ab5fc8a/images/select_channel.png "Select File")  
-
-Dans l'onglet en haut "Source", verifier que le chemin est bien "/opt/hl7"  
-
-Dans l'onglet Destination vérifier les acces postgresQl dans le code ci dessous :  
-
-```
-dbConn = DatabaseConnectionFactory.createDatabaseConnection('org.postgresql.Driver','jdbc:postgresql://**localhost:5432**/postgres','postgres','postgres');
-```  
-Ceci peu se modifier directement dasn le fichier TP_DAS.xml (ligne 244)  
-
-Nom de domaine et port peuvent être changé sur la ligne ci dessous dans mirth.  
-
-Cliquez sur le menu de gauche "Channel", confirmer la sauvegarde, puis dans le menu de gauche "Redeploy All", confirmer par OUI  
-
-# IMPORTANT  
-
-Les fichiers HL7 que vous allez émettre doivent être conforme a l'échantillon (1) qui se trouve [ici](https://gitlab.com/insa-hdf/architectures-orientees-services/-/blob/master/Mirth%20Connect%203.11/echantilon_1.hl7)  
-
-Prendre garde surtout à la date de naissance qui doit être au format "YYYYMMDD"  
-
-Et chaque valeur de champs a la bonne position dans le fichier.  
-
-Le numéro IPP est un incrément automatique suposé être du type ```int8 NOT NULL GENERATED ALWAYS AS IDENTITY```  
-
 # FIN  :-) 
